@@ -6,7 +6,7 @@ Satu server dijalankan beserta ada tiga client yang terhubung ke server. Saat sa
 
 <br>
 
-- 2.2 Modifying the websocket port
+- 2.2 Modifying the websocket port <br>
 Selain mengganti port pada client.rs menjadi 8080, harus juga mengganti port pada server.rs di tcp listener pada method bind. Hal ini dilakukan agar program server.rs terhubung ke port websocket yang sama dengan client.rs. Jika misalnya client masih terhubung ke websocket pada port 2000 namun server ke port 8080, maka akan terjadi error karena client dan server tidak terhubung.
 
 <br>
